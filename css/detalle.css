@@ -19,6 +19,14 @@
     --new-2:#2f54ed;
 }
 
+body{
+    background-color: antiquewhite;
+}
+
+
+
+/************ BANNER DESCRIPCION **************/
+
 .banner-detalle {
     background-color: #2f54ed;
     background-image: linear-gradient(180deg, #2f54ed 20%, #0a0a6b 54%, #2f54ed 86%);
@@ -80,3 +88,42 @@
 .btn4:hover::before {
     height: 380%;
 }
+
+
+
+
+/************ DESCRIPCION TRABAJADOR **************/
+
+.descripcion-container, .comentarios-container{
+    color: #2f54ed;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.carousel, .carousel-inner{
+    width: 380px;
+    height: 350px;
+}
+
+.imagen-trabajos{
+    object-fit: cover;
+    width:380px;
+    height:300px;
+}
+
+li{
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 390px) {
+
+    .carousel-inner{
+        max-width: 350px;
+        max-height: 342px;
+    }
+    .imagen-trabajos{
+        object-fit: cover;
+        max-width:380px;
+        height:300px;
+    }
+    }
