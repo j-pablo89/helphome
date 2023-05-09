@@ -1,26 +1,386 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="servicios">
-    <meta name="description" content="HelpHome Servicios">
-    <meta name="author" content="Ana Luz Santillan, Esteban Molina, Cristian Gramajo, Gerardo Gabriel Lescano, Juan Pablo Miranda">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="servicios" />
+    <meta name="description" content="HelpHome Servicios" />
+    <meta
+      name="author"
+      content="Ana Luz Santillan, Esteban Molina, Cristian Gramajo, Gerardo Gabriel Lescano, Juan Pablo Miranda"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Help Home</title>
-</head>
-<body>
-    <header>
-
-    </header>
+  </head>
+  <body>
+    <header></header>
     <main>
+      <section class="p-5 container-fluid">
+        <div class="row ">
+          <div class="col  sombreado">
+            <div
+              id="carouselExampleFade"
+              class="carousel slide carousel-fade"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner  redondear">
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <img
+                    src="img/imagenesIndex/cerrajero.jpg"
+                    class="d-block w-100 "
+                    alt="cerrajero"
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="img/imagenesIndex/electricista.jpg"
+                    class="d-block w-100 "
+                    alt="electricista"
+                  />
+                </div>
+                <div class="carousel-item" data-bs-interval="5000">
+                  <img
+                    src="img/imagenesIndex/plomero.jpg"
+                    class="d-block w-100 "
+                    alt="plomero"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h1 class="text-center sombreado text-bg-light"> <strong>ROLLINGHELP</strong></h1>
+            <h3 class="text-center">La solución en casa</h3>
+            <p class="color-shadow fs-4 text-center">Contamos con un prolongado listado a tu disposición de profesionales que ofrecen sus servicios a domicilio. 
+                Visita nuestro sitio y contacta con el personal altamente capacitado para resolver inconvenientes acorde a tus
+            necesidades.</p>
+          </div>
+        </div>
+        <hr class="border-3 mt-5 mx-0 px-0 text-black"/>
+      </section>
+      <section class="py-1 text-center px-5">
+        <h2 class="text-bg-dark fs-1 ">NUESTRAS CATEGORÍAS</h2>
+        <article class="mx-3 mt-5">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-12 pb-5">
+                    <h4 class="text-start">Buscar por categoría</h4>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Ej: albañil" aria-label="Search">
+                        <button class="btn btn-success" type="submit">Buscar</button>
+                      </form>
+                </div>
+                <div class="col-12 py-2">
+                    <div class="row">
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0 ">
+                                <img src="img/imagenesIndex/iconotecnicoaire.png" class="card-img-top h-50 w-50" alt="...">
+                                <p class="text-truncate"><strong> Aire Acondicionado</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconoalbañil.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Albañil</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconoarquitecto.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Arquitecto</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconopeluquero.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Barbero</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconobelleza.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Belleza</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconocarpintero.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Carpintero</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconocerrajero.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Cerrajero</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconocuidador.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Cuidador</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconodecorador.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Decorador</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconoelectricista.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Electricista</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconofumigador.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Fumigador</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconogasista.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Gasista</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconoherrero.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Herrero</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconojardinero.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Jardinero</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconolimpieza.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Limpieza</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconomasajes.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Masajes</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconopaseador.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Mascotas</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconomecanico.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Mecánico</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconomensajero.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Mensajero</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconopileta.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Piletas</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconopintor.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Pintor</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconoplomero.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Plomero</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconosastre.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Sastre</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconopolicia.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p class="text-truncate"><strong> Seguridad Privada</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconotapicero.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Tapicero</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
 
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0 hoverImagen">
+                                <img src="img/imagenesIndex/iconotecnico.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Técnico PC</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
+                            <a href="#">
+                            <div class="bg-dark-subtle p-0">
+                                <img src="img/imagenesIndex/iconoterapeuta.png" class="card-img-top h-50 w-50 p-0" alt="...">
+                                <p><strong> Terapeuta</strong></p>     
+                            </div>
+                            </a>
+                            
+                        </div>
+                    </div>
+            </div>
+          <hr class="border-3 mt-5 mx-0 px-0 text-black"/>
+        </article>
+      </section>
+      <section>
+        <h2 class="text-center pb-5 color-shadow"> <strong>
+            Puedes encontrar nuesta app en las plataformas de iOS y Android
+        </strong>
+        </h2>
+        <div class="row d-flex justify-content-center mx-2">
+          <div
+            class="col-4 text-center"
+            data-aos="zoom-in"
+            data-aos-duration="1500"
+          >
+            <img src="img/imagenesIndex/playstore.png" class="w-100" />
+          </div>
+          <div class="col-8" data-aos="fade-down" data-aos-duration="1500">
+            <p class="fs-3">
+              Descarga RollingHelp App y accede a la mejor plataforma de
+              servicios para el hogar.
+            </p>
+            <p class="fs-3">
+              Una vez instalada en tu smartphone, regístrate con tus datos y
+              ubicación para poder brindarte la solución a tus necesidades.
+            </p>
+            <div class="row d-flex justify-content-center pt-5">
+              <div class="col">
+                <a href="#"
+                  ><img
+                    src="img/imagenesIndex/disponibleplaystore.png"
+                    alt=""
+                    class="w-50"
+                /></a>
+              </div>
+              <div class="col">
+                <a href="#"
+                  ><img
+                    src="img/imagenesIndex/disponibleappstore.png"
+                    alt=""
+                    class="w-50"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-    <footer>
-
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-</body>
+    <footer></footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
