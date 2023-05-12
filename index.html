@@ -67,17 +67,53 @@
         <hr class="border-3 mt-5 mx-0 px-0 text-black"/>
       </section>
       <section class="py-1 text-center px-5">
-        <h2 class="text-bg-dark fs-1 ">NUESTRAS CATEGORÍAS</h2>
+        <h2 class="text-bg-dark fs-1 mb-4">PROFESIONALES EN TU HOGAR</h2>
+        <article class="galeriaSeccion d-flex container my-5">
+            <img src="img/imagenesIndex/carpintero22.jpg" alt="carpintero">
+            <img src="img/imagenesIndex/electricista22.jpg" alt="electricista">
+            <img src="img/imagenesIndex/sastre22.jpg" alt="sastre">
+            <img src="img/imagenesIndex/tecnicoaires22.jpg" alt="tecnico aire">
+            <img src="img/imagenesIndex/tecnicoPC22.jpg" alt="tecnico pc">
+        </article>
+      </section>
+      <section class="py-1 text-center px-5">
+        <h2 class="text-bg-dark fs-1 ">BÚSQUEDA POR CATEGORÍAS</h2>
         <article class="mx-3 mt-5">
             <div class="row">
-                <div class="col-lg-8 col-md-8 col-12 pb-5">
+                <div class="col-md-7 col-sm-12">
+                    <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label">Categoría</label>
+                        <select id="inputState" class="form-select">
+                          <option selected>Choose...</option>
+                          <option>...</option>
+                        </select>
+                      </div>
+                    <div class="col-md-6">
+                      <label for="inputTexto" class="form-label">Especialidad</label>
+                      <input type="text" class="form-control" id="inputTexto" placeholder="Ej: Muebles" maxlength="60" minlength="3" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputTexto" class="form-label">Ubicación</label>
+                        <input type="text" class="form-control" id="inputTexto" placeholder="EJ: Trancas" maxlength="30" min="2" required>
+                      </div>
+                    <div class="col-12 text-start">
+                      <button type="submit" class="btn btn-success">Buscar</button>
+                    </div>
+                  </form>
+                </div>
+                <div class="col-md-5 col-sm-12 pt-3">
+                    <img src="img/imagenesIndex/gif-media.gif" alt="" class="img-fluid">
+                </div>
+                
+                <!-- <div class="col-lg-8 col-md-8 col-12 pb-5">
                     <h4 class="text-start">Buscar por categoría</h4>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="Ej: albañil" aria-label="Search">
                         <button class="btn btn-success" type="submit">Buscar</button>
                       </form>
-                </div>
-                <div class="col-12 py-2">
+                </div> -->
+                <!-- <div class="col-12 py-2">
                     <div class="row">
                         <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
                             <a href="#">
@@ -324,7 +360,8 @@
                             
                         </div>
                     </div>
-            </div>
+            </div> -->
+          </div>
           <hr class="border-3 mt-5 mx-0 px-0 text-black"/>
         </article>
       </section>
@@ -339,7 +376,7 @@
             data-aos="zoom-in"
             data-aos-duration="1500"
           >
-            <img src="img/imagenesIndex/playstore.png" class="d-block w-100" />
+            <img src="img/imagenesIndex/playstore.png" class="d-block w-100 celu" />
           </div>
           <div class="col-lg-8 col-xs-12 col-md-8 col-sm-8" data-aos="fade-down" data-aos-duration="1500">
             <p class="fs-3">
