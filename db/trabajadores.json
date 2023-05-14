@@ -1,0 +1,12 @@
+[
+    {
+        "codigo":0,
+        "nombre": "Nombre del trabajador",
+        "rubro": "Carpinteria",
+        "imagen": "https://ejemplo.com/imagen.jpg",
+        "especialidad": ["puertas", "ventanas"],
+        "ubicacion": "Tucuman",
+        "descripcion": "Carpintero de san miguel de tucuman",
+        "resena": "Muy buena calidad, me encanta cómo queda puesta."
+    },
+]
