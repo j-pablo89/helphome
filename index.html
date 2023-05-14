@@ -83,284 +83,24 @@
                 <div class="col-md-7 col-sm-12">
                     <form class="row g-3">
                     <div class="col-md-6">
-                        <label for="inputState" class="form-label">Categoría</label>
+                        <label for="inputState" class="form-label">Rubro</label>
                         <select id="inputState" class="form-select">
                           <option selected>Choose...</option>
                           <option>...</option>
                         </select>
                       </div>
                     <div class="col-md-6">
-                      <label for="inputTexto" class="form-label">Especialidad</label>
-                      <input type="text" class="form-control" id="inputTexto" placeholder="Ej: Muebles" maxlength="60" minlength="3" required>
-                    </div>
-                    <div class="col-md-6">
                         <label for="inputTexto" class="form-label">Ubicación</label>
                         <input type="text" class="form-control" id="inputTexto" placeholder="EJ: Trancas" maxlength="30" min="2" required>
                       </div>
                     <div class="col-12 text-start">
-                      <button type="submit" class="btn btn-success">Buscar</button>
+                      <button class="btn btn-success" id="btnBuscar">Buscar</button>
                     </div>
                   </form>
                 </div>
                 <div class="col-md-5 col-sm-12 pt-3">
                     <img src="img/imagenesIndex/gif-media.gif" alt="" class="img-fluid">
                 </div>
-                
-                <!-- <div class="col-lg-8 col-md-8 col-12 pb-5">
-                    <h4 class="text-start">Buscar por categoría</h4>
-                    <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Ej: albañil" aria-label="Search">
-                        <button class="btn btn-success" type="submit">Buscar</button>
-                      </form>
-                </div> -->
-                <!-- <div class="col-12 py-2">
-                    <div class="row">
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0 ">
-                                <img src="img/imagenesIndex/iconotecnicoaire.png" class="card-img-top h-50 w-50" alt="...">
-                                <p class="text-truncate"><strong> Aire Acondicionado</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconoalbañil.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Albañil</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconoarquitecto.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Arquitecto</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconopeluquero.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Barbero</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconobelleza.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Belleza</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconocarpintero.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Carpintero</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconocerrajero.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Cerrajero</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconocuidador.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Cuidador</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconodecorador.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Decorador</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconoelectricista.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Electricista</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconofumigador.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Fumigador</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconogasista.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Gasista</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconoherrero.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Herrero</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconojardinero.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Jardinero</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconolimpieza.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Limpieza</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconomasajes.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Masajes</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconopaseador.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Mascotas</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconomecanico.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Mecánico</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconomensajero.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Mensajero</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconopileta.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Piletas</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconopintor.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Pintor</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconoplomero.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Plomero</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconosastre.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Sastre</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconopolicia.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p class="text-truncate"><strong> Seguridad Privada</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconotapicero.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Tapicero</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0 hoverImagen">
-                                <img src="img/imagenesIndex/iconotecnico.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Técnico PC</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                        <div class="col-12 col-lg-2 col-md-4 col-sm-4 col-xs-4 g-2 px-4">
-                            <a href="#">
-                            <div class="bg-dark-subtle p-0">
-                                <img src="img/imagenesIndex/iconoterapeuta.png" class="card-img-top h-50 w-50 p-0" alt="...">
-                                <p><strong> Terapeuta</strong></p>     
-                            </div>
-                            </a>
-                            
-                        </div>
-                    </div>
-            </div> -->
           </div>
           <hr class="border-3 mt-5 mx-0 px-0 text-black"/>
         </article>
@@ -409,6 +149,36 @@
         </div>
       </section>
     </main>
+    <div class="modal" tabindex="-1" id="modalBuscar">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title text-black">Resultados de La búsqueda</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <article>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre y Apellido</th>
+                                <th scope="col">Ubicacion</th>
+                              </tr>
+                            </thead>
+                            <tbody id="tablaBusqueda">  
+                            </tbody>
+                          </table>
+                    </div>
+                </article>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
     <footer></footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -419,5 +189,6 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+    <script src="js/filtro.js" type="module"></script>
   </body>
 </html>
