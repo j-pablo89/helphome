@@ -23,50 +23,24 @@
         <section class="container">
             <article class="row my-5">
                 <aside class="col-sm-12 col-md-6 order-1">
-                    <form class="container-fluid container-md py-4" action="error404.html" method="get">
-                        <article class="row mb-3">
-                            <h1 class="text-light ps-4 fs-2 fw-bold">Iniciar sesión</h1>
-                        </article>
-                        <div class="row mx-auto">
-                            <div class="col-12">
-                                <label class="form-label text-light" for="email">Email</label>
-                            </div>
-                            <div class="col-12">
-                                <input class="form-control bg-dark border-0 text-light" type="email" id="email"
-                                    name="email" required maxlength="255" />
-                            </div>
+                    <form id="loginForm" class="form-label container-fluid container-md py-4">
+                        <h1 class="text-light fs-2 fw-bold">Iniciar sesión</h1>
+                        <div class="mb-3">
+                            <label class="form-label text-light" for="email">Email</label>
+                            <input id="email" type="email" placeholder="anasantillan@gmail.com" required maxlength="350" minlength="10" class="form-control bg-dark border-0 text-light">
                         </div>
-
-                        <div class="row mx-auto mb-5">
-                            <div class="col-12">
-                                <label class="form-label text-light" for="password">Contraseña</label>
-                            </div>
-                            <div class="col-12">
-                                <input class="form-control bg-dark border-0 text-light" type="password" id="password"
-                                    name="password" required minlength="8" maxlength="10" />
-                            </div>
+                        <div class="my-3">
+                            <label class="form-label text-light" for="password">Contraseña</label>
+                            <input id="password" type="password" placeholder="12345678" required maxlength="15" minlength="8" class="form-control bg-dark border-0 text-light">
                         </div>
-
-                        <div class="row mx-auto mb-3">
-                            <div class="col-12">
-                                <button class="btn colorBoton border-0 w-100 py-3 fs-5">
-                                    Iniciar sesión
-                                </button>
-                            </div>
-                        </div>
-
-                        <div class="row mx-auto pb-3 px-3">
-                            <div class="col-6 px-0">
-                                <input type="checkbox" class="form-check-input bg-secondary border-0"
-                                    id="loginCheckbox" />
-                                <label class="text-light" for="loginCheckbox">Recuérdame</label>
-                            </div>
-                            <div class="col-6 p-0 text-end">
-                                <a class="text-decoration-none text-light" href="../pages/error404.html">¿Necesitas
-                                    ayuda?</a>
-                            </div>
-                        </div>
+                        <button type="submit" class="btn colorBoton">Iniciar Sesión</button>
+                        <!-- <input type="submit" class="btn colorBoton" value="Iniciar Sesión"> -->
                     </form>
+                    <div class="text-center">
+                        <a href="../pages/error404.html" class="link-info">
+                            ¿Has olvidado tu contraseña? Click aquí.
+                        </a>
+                    </div>
                 </aside>
                 <aside class="col-sm-12 col-md-6 order-sm-1">
                     <div class="text-center">

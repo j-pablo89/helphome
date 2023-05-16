@@ -28,4 +28,10 @@ body{
 .colorBoton{
     background-color: var(--new-1);
     color: var(--white-0);
+    width: 100%;
+}
+
+.colorBoton:hover{
+    background-color: var(--new-1);
+    color: var(--white-0);
 }
