@@ -1,0 +1,12 @@
+[
+    {
+        "usuario":"admin021195",
+        "contra":"654321",
+        "tipo":"admin"
+    },
+    {
+        "usuario":"usuario021195",
+        "contra":"123456",
+        "tipo":"usuario"
+    }
+]

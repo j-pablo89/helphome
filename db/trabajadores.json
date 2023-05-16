@@ -1,0 +1,50 @@
+[
+    {
+        "codigo":0,
+        "nombre": "Nombre del trabajador 0",
+        "rubro": "Carpinteria",
+        "avatar": "https://ejemplo.com/imagen.jpg",
+        "especialidad": ["puertas", "ventanas"],
+        "ubicacion": "Tucuman",
+        "descripcion": "Carpintero de san miguel de tucuman",
+        "resena": [{
+            "usuario":"cristian021195",
+            "comentario":"comentario #1 asdasdasd"
+        }],
+        "tiempo":1,
+        "precio":1250,
+        "galeria":["imagen1", "imagen2", "imagen3"]
+    },
+    {
+        "codigo":1,
+        "nombre": "Nombre del trabajador 1",
+        "rubro": "Pintureria",
+        "avatar": "https://ejemplo.com/imagen.jpg",
+        "especialidad": ["paredes"],
+        "ubicacion": "Santiago del Estero",
+        "descripcion": "Carpintero de san miguel de tucuman",
+        "resena": [{
+            "usuario":"cristian021195",
+            "comentario":"comentario #1 asdasdasd"
+        }],
+        "tiempo":1,
+        "precio":1500,
+        "galeria":["imagen1", "imagen2", "imagen3"]
+    },
+    {
+        "codigo":2,
+        "nombre": "Nombre del trabajador 2",
+        "rubro": "Albañileria",
+        "avatar": "https://ejemplo.com/imagen.jpg",
+        "especialidad": ["losa", "piso"],
+        "ubicacion": "Cordoba",
+        "descripcion": "Carpintero de san miguel de tucuman",
+        "resena": [{
+            "usuario":"cristian021195",
+            "comentario":"comentario #1 asdasdasd"
+        }],
+        "tiempo":1,
+        "precio":1750,
+        "galeria":["imagen1", "imagen2", "imagen3"]
+    }
+]
