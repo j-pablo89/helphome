@@ -17,8 +17,9 @@ loginForm.addEventListener(`submit`, (e)=>{
     if(!validUsers){
         return alert(`Usuario y/o contraseña incorrectos`)
     }
+    localStorage.setItem('sesion', JSON.stringify(validUsers));
+    
     alert(`Bienvenido ${validUsers.tipo}`)
     window.location.href=`../index.html`
-
 
 })
