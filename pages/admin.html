@@ -81,15 +81,15 @@
         </div>
         
     </header>
-    <main class="main-bg-2 text-center px-2">
+    <main class="main-bg-2 text-center px-2 text-white">
         <h1 class="text-white pt-5">Panel del Administrador</h1>
         <div class="d-flex justify-contend-end">
             <button type="button" class="btn btn-primary mt-5" id="modal" data-bs-toggle="modal" data-bs-target="#cargamodal">
                 + Cargar Nuevo
             </button>
-            <button type="button" class="btn btn-primary mt-5" id="check">
+            <!--<button type="button" class="btn btn-primary mt-5" id="check">
                 Check array
-            </button>
+            </button>-->
         </div>
         <section class="border rounded-1">
             <div id="panel" class="bg-white table-responsive">
@@ -292,15 +292,14 @@
     <script>
         
         const $panel = document.getElementById('panel');
+        const $main = document.querySelector('main');
         let trabajadores = localStorageJsonArray('trabajadores');
+        let sesion = localStorageJsonArray('sesion');
         const $modal = document.getElementById('modal');
         const $emodal = document.getElementById('emodal');
         const $cargamodalform = document.getElementById('cargamodalform');
         const $editarForm = document.getElementById('editar');
-        const $check = document.getElementById('check');
-        $check.addEventListener('click',()=>{
-            console.log(localStorageJsonArray('trabajadores'));
-        })
+        //const $check = document.getElementById('check');
         const [ $nombre, $rubroActual, $avatar, $especialidad, $ubicacionActual, $descripcion, $tiempo, $precio, $galeria, $codigo] = [
             document.getElementById('nombre'),
             document.getElementById('rubro-actual'),
@@ -313,48 +312,85 @@
             document.getElementById('galeria'),
             document.getElementById('codigo'),
         ]
+        //$check.addEventListener('click',()=>{
+        //    console.log(localStorageJsonArray('trabajadores'));
+        //})
 
-        if( trabajadores.length == 0){
-            $panel.innerHTML = `<h2 class="text-danger">¡Sin Datos!</h2>`;
+        if(sesion){
+            if(sesion.tipo != 'admin'){
+                let contador = 0;
+                let intervalo = setInterval(()=>{
+                    contador++;
+                    $main.innerHTML = `<h2>Sin credencial valida, saliendo ${contador}</h2>`
+                },1000)
+                setTimeout(() => {
+                    clearInterval(intervalo);
+                    window.location.href = '../index.html';
+                }, 3001);
+            }else{
+
+
+                if( trabajadores.length == 0){
+                    $panel.innerHTML = `<h2 class="text-danger">¡Sin Datos!</h2>`;
+                }else{
+                    render();
+                }
+
+                $cargamodalform.addEventListener('submit',(e)=>{
+                    e.preventDefault(); // orig.trim()
+                    let formData = new FormData(e.target);
+                    formData.append('codigo', uuidv4());
+                    let data = Object.fromEntries(formData);
+                    
+                    let especialidad = data.especialidad.split(',');
+                    let galeria = data.galeria.split(',');
+                    data = {...data, especialidad, galeria};
+                    let arr = localStorageJsonArray('trabajadores'); arr.push(data);
+                    localStorage.setItem('trabajadores', JSON.stringify(arr));
+                    render(); //eventLoaders();
+                    e.target.reset();
+                    $modal.click();
+                })
+
+                $editarForm.addEventListener('submit',(e)=>{
+
+                    e.preventDefault(); // orig.trim()
+                    let formData = new FormData(e.target);
+                    let data = Object.fromEntries(formData);
+                    let especialidad = data.especialidad.split(',');
+                    let galeria = data.galeria.split(',');
+                    data = {...data, especialidad, galeria};
+
+                    let arr = localStorageJsonArray('trabajadores');
+                    arr = arr.filter(t=>t.codigo != data.codigo);
+                    arr.push(data);
+                    localStorage.setItem('trabajadores', JSON.stringify(arr));
+                    render();
+                    e.target.reset();
+                    $emodal.click();
+                    //console.log(data)
+
+                })
+
+
+            }
         }else{
-            render();
-        }
 
-        $cargamodalform.addEventListener('submit',(e)=>{
-            e.preventDefault(); // orig.trim()
-            let formData = new FormData(e.target);
-            formData.append('codigo', uuidv4());
-            let data = Object.fromEntries(formData);
+            let contador = 0;
+                setInterval(()=>{
+                    contador++;
+                    $main.innerHTML = `<h2>Sin sesion, saliendo ${contador}</h2>`
+                },1000)
+                if(contador == 3){
+                    clearInterval(intervalo);
+                    window.location.href = '../index.html';
+                }
             
-            let especialidad = data.especialidad.split(',');
-            let galeria = data.galeria.split(',');
-            data = {...data, especialidad, galeria};
-            let arr = localStorageJsonArray('trabajadores'); arr.push(data);
-            localStorage.setItem('trabajadores', JSON.stringify(arr));
-            render(); //eventLoaders();
-            e.target.reset();
-            $modal.click();
-        })
+        }
+        
+        
 
-        $editarForm.addEventListener('submit',(e)=>{
-
-            e.preventDefault(); // orig.trim()
-            let formData = new FormData(e.target);
-            let data = Object.fromEntries(formData);
-            let especialidad = data.especialidad.split(',');
-            let galeria = data.galeria.split(',');
-            data = {...data, especialidad, galeria};
-
-            let arr = localStorageJsonArray('trabajadores');
-            arr = arr.filter(t=>t.codigo != data.codigo);
-            arr.push(data);
-            localStorage.setItem('trabajadores', JSON.stringify(arr));
-            render();
-            e.target.reset();
-            $emodal.click();
-            //console.log(data)
-
-        })
+        
 
         function Tabla(data=[]){
             //dom variables
