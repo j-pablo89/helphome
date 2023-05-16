@@ -10,14 +10,15 @@ loginForm.addEventListener(`submit`, (e)=>{
     e.preventDefault()
     const email=document.querySelector(`#email`).value
     const password=document.querySelector(`#password`).value
-
-    const Users=JSON.parse(localStorage.getItem(`usuarios`)) || []
-    const validUsers = Users.find(user => user.email===email && user.password===password)
+    console.log(email)
+    console.log(password)
+    const validUsers = usuarioLs.find(user => user.email===email && user.password===password);
+    console.log(validUsers);
     if(!validUsers){
         return alert(`Usuario y/o contraseña incorrectos`)
     }
-    alert(`Bienvenido ${validUsers.name}`)
-    window.location.href=`index.html`
+    alert(`Bienvenido ${validUsers.tipo}`)
+    window.location.href=`../index.html`
 
 
 })
