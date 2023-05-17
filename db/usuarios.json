@@ -1,0 +1,12 @@
+[
+    {
+        "email":"admin021195@gmail.com",
+        "password":"87652321",
+        "tipo":"admin"
+    },
+    {
+        "email":"usuario021195@gmail.com",
+        "password":"12345678",
+        "tipo":"usuario"
+    }
+]
