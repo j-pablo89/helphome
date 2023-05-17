@@ -15,7 +15,11 @@ loginForm.addEventListener(`submit`, (e)=>{
     const validUsers = usuarioLs.find(user => user.email===email && user.password===password);
     console.log(validUsers);
     if(!validUsers){
-        return alert(`Usuario y/o contraseña incorrectos`)
+        return Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: 'Usuario y/o contraseña incorrectos!'
+        })
     }
     localStorage.setItem('sesion', JSON.stringify(validUsers));
     
