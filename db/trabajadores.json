@@ -1,7 +1,7 @@
 [
     {
         "codigo":0,
-        "nombre": "Nombre del trabajador 1",
+        "nombre": "Nombre del trabajador 0",
         "rubro": "Carpinteria",
         "avatar": "https://ejemplo.com/imagen.jpg",
         "especialidad": ["puertas", "ventanas"],
@@ -17,11 +17,11 @@
     },
     {
         "codigo":1,
-        "nombre": "Nombre del trabajador 2",
+        "nombre": "Nombre del trabajador 1",
         "rubro": "Pintureria",
         "avatar": "https://ejemplo.com/imagen.jpg",
         "especialidad": ["paredes"],
-        "ubicacion": "Tucuman",
+        "ubicacion": "Santiago del Estero",
         "descripcion": "Carpintero de san miguel de tucuman",
         "resena": [{
             "usuario":"cristian021195",
@@ -33,11 +33,11 @@
     },
     {
         "codigo":2,
-        "nombre": "Nombre del trabajador 3",
+        "nombre": "Nombre del trabajador 2",
         "rubro": "Albañileria",
         "avatar": "https://ejemplo.com/imagen.jpg",
         "especialidad": ["losa", "piso"],
-        "ubicacion": "Tucuman",
+        "ubicacion": "Cordoba",
         "descripcion": "Carpintero de san miguel de tucuman",
         "resena": [{
             "usuario":"cristian021195",
