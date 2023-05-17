@@ -37,6 +37,10 @@ function filtrarBusqueda(e) {
         return cumpleRubro && cumpleUbicacion;
     });
     
+    
+    if (resultadosFiltrados.length <= 0) {
+        cerrarModal();
+    }
     // Mostrar cada resultado en una fila de la tabla
     resultadosFiltrados.forEach(trabajador => {
         const fila = document.createElement('tr');
