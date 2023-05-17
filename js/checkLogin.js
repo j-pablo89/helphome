@@ -13,5 +13,4 @@ salirSesion.addEventListener('click', () => cerrarSesion());
 
 function cerrarSesion(){
     localStorage.removeItem('sesion');
-    Swal.fire('Cierre de sesión exitoso')
 }

@@ -148,10 +148,10 @@ footer ul li{ list-style: none;}
   bottom: -12px;
 }
 
-#menuToggle input:checked ~ #menulist, #menuToggle input:checked ~ ul
+/* #menuToggle input:checked ~ #menulist, #menuToggle input:checked ~ ul
 {
     
-}
+} */
 #menulist {
     position: absolute;
   width: 300px;
