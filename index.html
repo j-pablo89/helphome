@@ -84,17 +84,19 @@
                     <form class="row g-3">
                     <div class="col-md-6">
                         <label for="inputState" class="form-label">Rubro</label>
-                        <select id="inputState" class="form-select">
-                          <option selected>Choose...</option>
-                          <option>...</option>
+                        <select id="inputState" class="form-select" required>
+                          <option selected>Elige una opcion...</option>
+                          <option>Albañileria</option>
+                          <option>Carpinteria</option>
+                          <option>Pintureria</option>
                         </select>
                       </div>
                     <div class="col-md-6">
                         <label for="inputTexto" class="form-label">Ubicación</label>
-                        <input type="text" class="form-control" id="inputTexto" placeholder="EJ: Trancas" maxlength="30" min="2" required>
+                        <input type="text" class="form-control" id="inputTexto" placeholder="EJ: Trancas" maxlength="30" min="2">
                       </div>
                     <div class="col-12 text-start">
-                      <button class="btn btn-success" id="btnBuscar">Buscar</button>
+                      <button class="btn btn-success" id="btnBuscar" type="submit">Buscar</button>
                     </div>
                   </form>
                 </div>
@@ -153,7 +155,8 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title text-black">Resultados de La búsqueda</h5>
+              <h5 class="modal-title text-primary">Resultados de La búsqueda</h5>
+              
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -162,8 +165,8 @@
                         <table class="table table-striped">
                             <thead>
                               <tr>
-                                <th scope="col">#</th>
                                 <th scope="col">Nombre y Apellido</th>
+                                <th scope="col">Rubro</th>
                                 <th scope="col">Ubicacion</th>
                               </tr>
                             </thead>
@@ -174,12 +177,13 @@
                 </article>
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn bg-primary text-light" data-bs-dismiss="modal">Cerrar</button>
             </div>
           </div>
         </div>
       </div>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
