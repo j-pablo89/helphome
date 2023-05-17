@@ -7,7 +7,8 @@ function filtrarBusqueda(e) {
     e.preventDefault();
 }
 
-const resultsTableBody = document.querySelector('#results-table tbody');
+const resultsTableBody = document.querySelector('#tablaBusqueda');
+
 
 function mostrarResultados(resultados) {
     // Limpiar la tabla
@@ -30,13 +31,8 @@ function mostrarResultados(resultados) {
     })
 }
 
-// Evento de envío del formulario
-searchForm.addEventListener('submit', function (event) {
-    event.preventDefault();
-
     // Obtener los valores de los filtros
-    const rubro = document.getElementById('rubro').value
-        .toLowerCase();
+    const rubro = document.getElementById('rubro').value.toLowerCase();
     const ubicacion = document.getElementById('ubicacion').value.toLowerCase();
 
     // Leer el archivo JSON con los datos de los trabajadores
@@ -45,8 +41,8 @@ searchForm.addEventListener('submit', function (event) {
         .then(data => {
             // Filtrar los trabajadores según los filtros ingresados
             const resultados = data.filter(trabajador =>
-                trabajador.rubro.toLowerCase().includes(rubro) &&
-                trabajador.ubicacion.toLowerCase().includes(ubicacion)
+                rubro.toLowerCase().includes(rubro) &&
+                ubicacion.toLowerCase().includes(ubicacion)
             )
             // Mostrar los resultados en la tabla
             mostrarResultados(resultados);
@@ -54,4 +50,3 @@ searchForm.addEventListener('submit', function (event) {
         .catch(error => {
             console.error('Error al leer el archivo JSON:', error);
         });
-});
