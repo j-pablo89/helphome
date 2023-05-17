@@ -37,7 +37,6 @@ function filtrarBusqueda(e) {
         return cumpleRubro && cumpleUbicacion;
     });
     
-    
     if (resultadosFiltrados.length <= 0) {
         cerrarModal();
     }
@@ -56,4 +55,11 @@ function filtrarBusqueda(e) {
         fila.appendChild(celdaUbicacion);
         resultsTableBody.appendChild(fila);
     })
+}
+
+function cerrarModal() {
+    const modal = document.getElementById('modalBuscar');
+    modalBuscar.hide()
+    Swal.fire('Seleccione un rubro!')
+        return;
 }
