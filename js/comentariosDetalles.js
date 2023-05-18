@@ -79,10 +79,6 @@ let codigo = params.get("codigo"); // is the string "Jonathan"
 // console.log(listatrabajadores.find((t)=> t.codigo == codigo));
 let trabajadorEncontrado = listatrabajadores.find((t)=> t.codigo == codigo);
 
-console.log(trabajadorEncontrado.nombre);
-
-
-
 function cargarDatosDOM(){
     const avatar = document.createElement('img');
     avatar.src = trabajadorEncontrado.avatar;
@@ -102,37 +98,35 @@ function cargarDatosDOM(){
     const especialidad = document.createElement('ul');
     for(let indice = 0;indice<trabajadorEncontrado.especialidad.length;indice++){
         let fila = document.createElement('li');
+        fila.className = 'especialidades';
         fila.innerHTML = trabajadorEncontrado.especialidad[indice];
         especialidad.appendChild(fila);
     }
-    const precio = document.createElement('h6');
-    precio.innerHTML = trabajadorEncontrado.precio;
+    const precio = document.createElement('h5');
+    precio.innerHTML = 'Precio Base: $'+trabajadorEncontrado.precio;
+    precio.className = 'pb-3';
     const galeria1 = document.createElement('img');
     galeria1.src = trabajadorEncontrado.galeria[0];
+    galeria1.className = 'd-block w-100 imagen-trabajos'
     const galeria2 = document.createElement('img');
     galeria2.src = trabajadorEncontrado.galeria[1];
+    galeria2.className = 'd-block w-100 imagen-trabajos'
     const galeria3 = document.createElement('img');
     galeria3.src = trabajadorEncontrado.galeria[2];
-    
+    galeria3.className = 'd-block w-100 imagen-trabajos'
     clasePadre1.prepend(ubicacion);
     clasePadre1.prepend(rubro);
     clasePadre1.prepend(nombre);
     clasePadre1.prepend(avatar);
-
-    clasePadre2.appendChild(descripcion);
-
+    clasePadre2.insertBefore(descripcion,document.getElementById('antesDe'));
     clasePadre3.appendChild(especialidad);
-
     claseCarrusel1.appendChild(galeria1);
     claseCarrusel2.appendChild(galeria2);
     claseCarrusel3.appendChild(galeria3);
-
     clasePadre5.appendChild(precio);
-
-
 }
 
-
+cargarDatosDOM();
 
 
 

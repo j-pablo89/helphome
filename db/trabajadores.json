@@ -1,19 +1,19 @@
 [
     {
         "codigo":0,
-        "nombre": "Nombre del trabajador 1",
+        "nombre": "Armando Morales",
         "rubro": "Carpinteria",
         "avatar": "https://ejemplo.com/imagen.jpg",
-        "especialidad": ["puertas", "ventanas"],
+        "especialidad": ["puertas", "ventanas","Armado de Muebles","Aberturas de Madera","Colocacion de Muebles"],
         "ubicacion": "Tucuman",
-        "descripcion": "Carpintero de san miguel de tucuman",
+        "descripcion": "Hola, mi nombre es Armando, hago reparaciones e instalaciones a domicilio, todo lo relacionado a la carpintería de aglomerado, melamina y madera. INSTALACION Y ARMADO DE PLACARES Y COCINAS Y ALACENAS A DOMICILIO REPARACIONES DE MOBILIARIO DE COCINA. Bajo mesada, alacenas, puertas, cajones, recambio de accesorios. REPARACIONES DE PLACARES DE MELAMINA Y SIMILARES.Estantes, puertas, cajones, recambio de accesorios. REPARACION DE ABERTURAS DE MADERA. Marcos, puertas, ventanas Tengo más de 5 años de experiencia en el rubro. SU CONSULTA NO MOLESTA GRACIAS .",
         "resena": [{
             "usuario":"cristian021195",
             "comentario":"comentario #1 asdasdasd"
         }],
         "tiempo":1,
         "precio":1250,
-        "galeria":["imagen1", "imagen2", "imagen3"]
+        "galeria":["../img/trabajoCarp1.jpg", "../img/trabajoCarp2.jpg", "../img/trabajoCarp3.jpg"]
     },
     {
         "codigo":1,

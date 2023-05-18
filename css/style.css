@@ -53,9 +53,9 @@ body{
     background-color: var(--new-0);
     color: white
 }
-.btn-purpura:hover{
-    background-color: var(--purple-0);
-    color: aliceblue;
+
+ul{
+    list-style: none ;
 }
 
 .sombreado{
@@ -67,24 +67,16 @@ body{
 .redondear{
     border-radius: 40px;
 }
-ul{
-    list-style: none;
-}
-li{
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-a:hover{
-    transform: scale(1.2);
-    cursor: grab;
-    color: white;
-    text-shadow: 0px 0px 10px var(--new-0);
-}
+
+
 a{
     text-decoration: none;
     color:rgb(177, 230, 255)
 }
 
+li{
+    margin: 0px 0px;
+}
 .color-shadow{
     text-shadow: 0px 0px 10px #190072;
 }

@@ -25,7 +25,7 @@
   </head>
   <body>
     <header class="main-bg-1 py-3">
-      <nav class="navbar navbar-expand-lg navbar-dark">
+      <nav class="navbar navbar-expand-lg navbar-dark container">
           <div class="container-fluid">
               <a class="navbar-brand" href="./index.html">
                   <div>
@@ -39,7 +39,7 @@
                   <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu-bar">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="menu-bar">
                       <li class="nav-item">
                           <a class="nav-link" aria-current="page" href="./index.html">Inicio</a>
                       </li>
@@ -50,25 +50,15 @@
                           <a class="nav-link" aria-current="page" href="./pages/acercaDeNosotros.html">Sobre Nosotros</a>
                       </li>
                       <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./pages/404.html">Extra</a>
+                      </li>
+                      <li class="nav-item">
                           <a class="nav-link" aria-current="page" id="login" href="./pages/login.html">Login</a>
                       </li>
                       <li class="nav-item">
                           <a class="nav-link" aria-current="page" id="logout" onclick="Salir" href="./pages/login.html">Logout</a>
                       </li>
-                      <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="./pages/404.html">Extra</a>
-                      </li>
-                      <!--<li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-          </li>-->
+                      
                   </ul>
               </div>
           </div>
@@ -184,7 +174,7 @@
             </p>
             <div class="row d-flex justify-content-center pt-5">
               <div class="col">
-                <a href="#"
+                <a href="pages/404.html"
                   ><img
                     src="img/imagenesIndex/disponibleplaystore.png"
                     alt=""
@@ -192,7 +182,7 @@
                 /></a>
               </div>
               <div class="col">
-                <a href="#"
+                <a href="pages/404.html"
                   ><img
                     src="img/imagenesIndex/disponibleappstore.png"
                     alt=""
@@ -236,41 +226,35 @@
           </div>
         </div>
       </div>
-      <footer class="py-5 px-2 text-white">
-        <div class="d-flex justify-content-between mx-4">
-            <div>
-                <img src="https://cristian021195.github.io/portfolio/img/others/HHlogo.svg" alt="" width="100px">
-            </div>
-            <div>
-                <div class="d-flex align-items-center">
-                    <div>
-                        <img src="https://cristian021195.github.io/portfolio/img/logos/clogo14.svg" alt="" width="50px"
-                            class="me-2">
-                    </div>
-                    <div>
-                        <small>Coordinación <br> de Trabajadores <br> Autónomos</small>
-                    </div>
-                </div>
-            </div>
+      <footer class="row py-4 text-white mx-0">
+        <div class="col-12 col-sm-6 d-flex justify-content-center my-3 mt-md-0">
+              <img src="https://cristian021195.github.io/portfolio/img/others/HHlogo.svg" alt="" width="100px">
         </div>
-
-        <div class="d-flex justify-content-center">
+        <div class="col-12 col-sm-6 d-flex justify-content-center my-3">
+          <div>
+              <img src="https://cristian021195.github.io/portfolio/img/logos/clogo14.svg" alt="" width="50px"
+                  class="me-2">
+          </div>
+          <div>
+              <small>Coordinación <br> de Trabajadores <br> Autónomos</small>
+          </div>
+      </div>
+        <div class="col-12 col-sm-6 d-flex justify-content-center my-3">
             <ul class="d-flex gap-4 flex-wrap">
                 <li>
                     <a aria-current="page" href="./pages/nosotros.html">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a aria-current="page" href="./pages/login.html">Login</a>
                 </li>
                 <li>
                     <a aria-current="page" href="./pages/404.html">Extra</a>
                 </li>
             </ul>
         </div>
-        <div class="d-flex justify-content-center">
-            <ul class="d-flex gap-4 flex-wrap"><!--Redes-->
+        
+        <div class="col-12 col-sm-6 justify-content-center d-flex mt-md-3 my-3">
+          <h6>Nuestras redes:</h6>
+            <ul class="d-flex gap-4 flex-wrap">
                 <li>
-                    <a href="#elemento1">
+                    <a href="pages/404.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-facebook" viewBox="0 0 16 16">
                             <path
@@ -279,7 +263,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#elemento2">
+                    <a href="pages/404.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-instagram" viewBox="0 0 16 16">
                             <path
@@ -288,7 +272,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#elemento3">
+                    <a href="pages/404.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-linkedin" viewBox="0 0 16 16">
                             <path
@@ -297,7 +281,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#elemento4">
+                    <a href="pages/404.html">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-whatsapp" viewBox="0 0 16 16">
                             <path
@@ -306,7 +290,7 @@
                     </a>
                 </li>
             </ul>
-        </div>
+        </div>    
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
