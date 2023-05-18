@@ -1,5 +1,7 @@
 import resumenValidacion from "./helper.js";
 
+let listatrabajadores = JSON.parse(localStorage.getItem('trabajadores'));
+
 let inputNombreUsuario = document.getElementById('inputNombreUsuario');
 let TextAreaComentario = document.getElementById('TextAreaComentario');
 let formularioComentario = document.querySelector('form');
@@ -62,3 +64,9 @@ function obtenerFechaHora() {
     
     return `${horaActual}:${minutosActuales}:${segundosActuales} - ${fechaActual.getDate()}/${fechaActual.getMonth()+1}/${fechaActual.getFullYear()}`;
 }
+
+let params = new URLSearchParams(document.location.search);
+let codigo = params.get("codigo"); // is the string "Jonathan"
+console.log(listatrabajadores.find((t)=> t.codigo == codigo));
+
+

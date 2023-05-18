@@ -7,6 +7,8 @@ body{
     color: white; 
 }
 
+
+
 .galeriaSeccion{
     justify-content: center;
     display: flex;
@@ -80,7 +82,7 @@ a:hover{
 }
 a{
     text-decoration: none;
-    color:rgb(0, 0, 0)
+    color:rgb(177, 230, 255)
 }
 
 .color-shadow{
@@ -110,3 +112,174 @@ a{
 #swal2-title{
     color: #2f54ed;
 }
+
+/*PALETA DE COLORES*/
+
+:root{
+    --blue-0:#061F6C;
+    --blue-1:#052263;
+    --blue-2:#061F4B;
+    --blue-3:#6F9AF4;
+    --white-0:#f1f1f1;
+    --white-1:#FFFFFF;
+    --red-0:#E25B50;
+    --red-1:#FF725E;
+    --red-2:#ff8e8a;
+    --yellow-0:#e2c750;
+    --yellow-1:#f7df75;
+    --green-0:#13a100;
+    --green-1:#4bcc3a;
+    --purple-0:#505ae2;
+    --purple-1:#7f86e9;
+    --new-0:#3c1162;
+    --new-1:#181876;
+    --new-2:#2f54ed;
+}
+
+
+/* Helpers */
+.outlined{ outline: 1px solid red; }
+ 
+
+/* Custom */
+nav ul li, .nav ul li{ list-style: none; }
+#menulist li a{ text-decoration: none;  margin-right: 2em; color: var(--white-0);}
+/*#menulist{
+    position: absolute;
+    width: 97vw;
+    left: -90vw;
+    top: 4em;
+}*/
+
+
+.main-bg-1{ background-color: var(--new-1);}
+.main-bg-2{ background-image: linear-gradient(225deg, #3c1162 9%, #181876 80%); min-height: 100vh;}
+footer{background-color: var(--blue-1);}
+footer ul li{ list-style: none;}
+
+#menuToggle
+{
+  display: block;
+  position: relative;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
+}
+
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0;  /*hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  bottom: 15px;
+  /*background: #232323;*/
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  /*opacity: 0;*/
+  display: none;
+  /*transform: rotate(0deg) scale(0.2, 0.2);*/
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);  
+  bottom: -12px;
+}
+
+/* #menuToggle input:checked ~ #menulist, #menuToggle input:checked ~ ul
+{
+    
+} */
+#menulist {
+    position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 60%);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);

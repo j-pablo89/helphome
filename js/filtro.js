@@ -3,7 +3,7 @@ import trabajadores from '../db/trabajadores.json' assert {type:'json'}
 localStorage.setItem('trabajadores', JSON.stringify(trabajadores));
 
 let listatrabajadores = JSON.parse(localStorage.getItem('trabajadores'));
-console.log(listatrabajadores)
+
 
 
 listatrabajadores.forEach(trabajador => {
@@ -11,7 +11,7 @@ listatrabajadores.forEach(trabajador => {
     const nombre = trabajador.nombre
     const rubro = trabajador.rubro;
     const ubicacion = trabajador.ubicacion;
-    console.log(nombre, rubro, ubicacion)
+   
 })
 
 
@@ -31,17 +31,22 @@ function filtrarBusqueda(e) {
     resultsTableBody.innerHTML = '';
     
     //Filtrar resultados
-    const resultadosFiltrados = listatrabajadores.filter(trabajador => {
+    if(filtroRubro == "elige una opcion..."){
+        cerrarModal('Seleccione un rubro');
+    }else{
+        const resultadosFiltrados = listatrabajadores.filter(trabajador => {
+        
         const cumpleRubro = filtroRubro === '' || trabajador.rubro.toLowerCase().includes(filtroRubro.toLowerCase());
         const cumpleUbicacion = filtroUbicacion === '' || trabajador.ubicacion.toLowerCase().includes(filtroUbicacion.toLowerCase());
         return cumpleRubro && cumpleUbicacion;
-    });
+         });
     
     if (resultadosFiltrados.length <= 0) {
-        cerrarModal();
-    }
-    // Mostrar cada resultado en una fila de la tabla
-    resultadosFiltrados.forEach(trabajador => {
+        cerrarModal('No se encontraron coincidencias');
+        }
+
+        // Mostrar cada resultado en una fila de la tabla
+        resultadosFiltrados.forEach(trabajador => {
         const fila = document.createElement('tr');
         const celdaNombre = document.createElement('td');
         celdaNombre.textContent = trabajador.nombre;
@@ -49,17 +54,27 @@ function filtrarBusqueda(e) {
         celdaRubro.textContent = trabajador.rubro;
         const celdaUbicacion = document.createElement('td');
         celdaUbicacion.textContent = trabajador.ubicacion;
-
+        const botonAccion = document.createElement('a');
+        botonAccion.innerHTML = 'Detalles';
+        botonAccion.className = 'btn btn-info';
+        botonAccion.href = 'pages/detalle.html?codigo=' + trabajador.codigo;
+        botonAccion.role = 'button';
+        const celdaAccion = document.createElement('td');
+        celdaAccion.appendChild(botonAccion);
         fila.appendChild(celdaNombre);
         fila.appendChild(celdaRubro);
         fila.appendChild(celdaUbicacion);
+        fila.appendChild(celdaAccion);
         resultsTableBody.appendChild(fila);
     })
+    }
+    
+    
 }
 
-function cerrarModal() {
+function cerrarModal(mensaje) {
     const modal = document.getElementById('modalBuscar');
     modalBuscar.hide()
-    Swal.fire('Seleccione un rubro!')
+    Swal.fire(mensaje)
         return;
 }
