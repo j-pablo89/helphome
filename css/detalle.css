@@ -19,6 +19,11 @@
     --new-2:#2f54ed;
 }
 
+a{
+    text-decoration: none;
+    color:rgb(177, 230, 255)
+}
+
 body{
     background-color: antiquewhite;
 }
