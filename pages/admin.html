@@ -14,89 +14,53 @@
     <title>Help Home</title>
 </head>
 <body>
-    <header class="main-bg-1 d-flex align-items-center justify-content-between p-4">
-        <div>
-            <img src="https://cristian021195.github.io/portfolio/img/others/desktop-layout.svg" alt="alternativo">
-        </div>
-        <!--<nav class="d-none d-md-block">
-            <ul class="d-flex m-0">
-                <li><a href="#Inicio">Inicio</a></li>
-                <li><a href="#Administrador">Administrador</a></li>
-                <li><a href="#Detalles">Detalles</a></li>
-                <li><a href="#404">404</a></li>
-                <li><a href="#Sobre Nosotros">Sobre Nosotros</a></li>
-                <li><a href="#Login">Login</a></li>
-                <li><a href="#Extra">Extra</a></li>
-            </ul>
-        </nav>-->
+    <header class="main-bg-1 py-3">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Dropdown
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Action</a></li>
-                                <li><a class="dropdown-item" href="#">Another action</a></li>
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+          <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">
+              <div>
+                <img src="https://cristian021195.github.io/portfolio/img/others/HHlogo.svg" alt="" width="100px">
+              </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu-bar">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./admin.html">Administrador</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./detalles.html">Detalles</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./login.html">Login</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="./404.html">Extra</a>
+                </li>
+                <!--<li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>-->
+              </ul>
             </div>
+          </div>
         </nav>
-        <div class="d-md-none d-flex flex-wrap nav" id="menuToggle">
-            <div>
-                <input type="checkbox" name="menu" id="menu">
-                <!--<label for="menu">-->
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul id="menulist">
-                <a href="#">
-                    <li>Home</li>
-                </a>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>Info</li>
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                </a>
-                <a href="https://erikterwan.com/" target="_blank">
-                    <li>Show me more</li>
-                </a>
-            </ul>
-        </div>
-    </header>
+      </header>
     <main class="main-bg-2 text-center px-2 text-white">
         <h1 class="text-white pt-5">Panel del Administrador</h1>
         <div class="d-flex justify-contend-end">
@@ -105,7 +69,7 @@
                 + Cargar Nuevo
             </button>
             <!--<button type="button" class="btn btn-primary mt-5" id="check">
-                Check array
+                Check 
             </button>-->
         </div>
         <section class="border rounded-1">
