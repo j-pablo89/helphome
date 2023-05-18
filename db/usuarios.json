@@ -1,12 +1,12 @@
 [
     {
-        "usuario":"admin021195",
-        "contra":"654321",
+        "email":"admin021195@gmail.com",
+        "password":"87654321",
         "tipo":"admin"
     },
     {
-        "usuario":"usuario021195",
-        "contra":"123456",
+        "email":"usuario021195@gmail.com",
+        "password":"12345678",
         "tipo":"usuario"
     }
 ]

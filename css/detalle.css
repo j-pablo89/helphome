@@ -1,0 +1,152 @@
+:root{
+    --blue-0:#061F6C;
+    --blue-1:#052263;
+    --blue-2:#061F4B;
+    --blue-3:#6F9AF4;
+    --white-0:#f1f1f1;
+    --white-1:#FFFFFF;
+    --red-0:#E25B50;
+    --red-1:#FF725E;
+    --red-2:#ff8e8a;
+    --yellow-0:#e2c750;
+    --yellow-1:#f7df75;
+    --green-0:#13a100;
+    --green-1:#4bcc3a;
+    --purple-0:#505ae2;
+    --purple-1:#7f86e9;
+    --new-0:#3c1162;
+    --new-1:#181876;
+    --new-2:#2f54ed;
+}
+
+a{
+    text-decoration: none;
+    color:rgb(177, 230, 255)
+}
+
+body{
+    background-color: antiquewhite;
+}
+
+
+
+/************ BANNER DESCRIPCION **************/
+
+.banner-detalle {
+    background-color: #2f54ed;
+    background-image: linear-gradient(180deg, #2f54ed 20%, #0a0a6b 54%, #2f54ed 86%);
+}
+
+.nombre-banner {
+    font-family: 'Fugaz One', cursive;
+}
+
+.avatar-detalle {
+    border-radius: 50px;
+    max-width: 80px;
+    object-fit: contain;
+}
+
+.estrellas {
+    letter-spacing: 5px;
+}
+
+
+.middle {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-family: "montserrat";
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #f37004;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: 1s all ease;
+}
+
+.btn::before {
+    background: #f37004;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn4::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.btn4:hover::before {
+    height: 380%;
+}
+
+
+
+
+/************ DESCRIPCION TRABAJADOR **************/
+
+.descripcion-container, .comentarios-container{
+    color: #2f54ed;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.carousel, .carousel-inner{
+    width: 380px;
+    height: 350px;
+}
+
+.imagen-trabajos{
+    object-fit: cover;
+    width:380px;
+    height:300px;
+}
+
+.especialidades{
+    margin-bottom: 40px;
+}
+
+nav ul li, .nav ul li{ list-style: none; }
+#menulist li a{ text-decoration: none;  margin-right: 2em; color: var(--white-0);}
+
+body{
+    background-image: url("/img/imagenesIndex/backk4SATINADO.jpg");
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+    /* background-color: var(--new-2);
+    background-image: linear-gradient(225deg, var(--new-1) 9%, var(--new-2) 80%);*/
+    color: white; 
+
+}
+header{
+    background-color: var(--blue-1);
+}
+footer{background-color: var(--blue-1);}
+footer ul li{ list-style: none;}
+
+@media screen and (max-width: 390px) {
+
+    .carousel-inner{
+        max-width: 350px;
+        max-height: 342px;
+    }
+    .imagen-trabajos{
+        object-fit: cover;
+        max-width:380px;
+        height:300px;
+    }
+    }
