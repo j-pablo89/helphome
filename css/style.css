@@ -143,6 +143,7 @@ footer ul li{ list-style: none;}
   transform: translate(-100%, 60%);
   
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
 
 body{
     background-image: url("/img/imagenesIndex/backk4SATINADO.jpg");
@@ -226,7 +227,7 @@ a:hover{
 }
 a{
     text-decoration: none;
-    color:rgb(0, 0, 0)
+    color:rgba(131, 191, 231, 0.84)
 }
 
 .color-shadow{
