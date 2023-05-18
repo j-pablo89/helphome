@@ -5,7 +5,7 @@ if(sesionActual){
 
 }else{
     let logout = document.getElementById('logout');
-    logout.remove();
+    logout.className = 'd-none';
 }
 
 let salirSesion = document.getElementById('logout');
